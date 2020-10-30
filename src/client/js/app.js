@@ -1,4 +1,12 @@
 /* Global Variables */
+// Username for geonames
+const userName = ''
+
+// API Key for weatherbit 
+const weaKEY = ''
+
+// API Key for pixarbay
+const pixKEY ''
 
 
 // Create a new date instance dynamically with JS
@@ -14,7 +22,7 @@ document.getElementById('submit').addEventListener('click', submit);
 const geo = 'http://api.geonames.org/postalCodeSearchJSON?';
 const postalCode = 'postalcode='
 const placeName = '&placename='
-const geoUsername = '&maxRows=10&username=svenduve'
+const geoUsername = '&maxRows=10&username='
 let geoURL = ''
 
 // '<YOUR_API_KEY>&units=imperial';
@@ -29,11 +37,11 @@ function getUserInput() {
     if (x != '') {
         if (isNaN(parseInt(x))) {
     
-            geoURL = geo + postalCode + placeName + x + geoUsername
+            geoURL = geo + postalCode + placeName + x + geoUsername + userName
         }
         else {
 
-            geoURL = geo + postalCode + x + placeName + geoUsername
+            geoURL = geo + postalCode + x + placeName + geoUsername + userName
         }
 
     }
@@ -52,14 +60,14 @@ function getUserInput() {
 const weabit = 'https://api.weatherbit.io/v2.0/forecast/daily?lat='
 const lon = '&lon='
 const city = '&city='
-const weabitAPIKEY = '&key=207b2b7a5c684e78aa14b6164899ec78'
+const weabitAPIKEY = '&key='
 let wbURL = ''
 
 
 async function getWeatBit(){
 
     const data = await getData('/getLatLon')
-    wbURL = weabit + data.postalCodes[0].lat + lon + data.postalCodes[0].lng + city + weabitAPIKEY; 
+    wbURL = weabit + data.postalCodes[0].lat + lon + data.postalCodes[0].lng + city + weabitAPIKEY + weaKEY; 
     const weData = await getData(wbURL)
     postData('/weatherData', weData)
 
@@ -69,14 +77,15 @@ async function getWeatBit(){
 
 // pixarbay
 
-const pixarbay = 'https://pixabay.com/api/?key=18872890-e258deab9e22421551fe2a26f&q='
+const pixarbay = 'https://pixabay.com/api/?key='
+const place = '&q='
 const imType = '&image_type=photo'
 let pixURL = ''
 
 async function getImage(){
 
     let data = await getData('/getLatLon')
-    pixURL = pixarbay + data.postalCodes[0].placeName + imType
+    pixURL = pixarbay + pixKEY + place + data.postalCodes[0].placeName + imType
     let picData = await getData(pixURL)
     postData('/pictureData', picData)
 
