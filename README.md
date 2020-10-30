@@ -11,13 +11,6 @@ The app makes use of the following API:
 - [Pixabay API](https://pixabay.com/)  - gets photo for the location
 - [REST Countries](https://restcountries.eu) - to get additional information about the destination
 
-The API key have to be entered in ```/src/client/js/app.js```
-
-```
-const userName = //your geonames API key
-const weaKEY = //your weatherbit API key
-const pixKEY = //your pixarbay API key
-```
 
 The project runs on node.js and express server.
 
@@ -26,6 +19,14 @@ The project runs on node.js and express server.
 It is required that node.js is installed. This can be downloaded at [node.js](https://nodejs.org/en/). API keys are required for the above webservices. 
 
 These are hardcoded
+
+The API key have to be entered in ```/src/client/js/app.js```
+
+```
+const userName = //your geonames API key
+const weaKEY = //your weatherbit API key
+const pixKEY = //your pixarbay API key
+```
 
 
 ## Installation
