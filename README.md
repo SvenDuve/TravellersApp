@@ -1,10 +1,13 @@
-# Weather-Journal App Project
+# Travellers App
 
-## Overview
-This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI. 
+## Description
 
-## Instructions
-This will require modifying the `server.js` file and the `website/app.js` file. You can see `index.html` for element references, and once you are finished with the project steps, you can use `style.css` to style your application to customized perfection.
+The App helps a traveller to plan his journey ahead. The user can enter a destination and a departure date, and can then retrieve information from the destination.
 
-## Extras
-If you are interested in testing your code as you go, you can use `tests.js` as a template for writing and running some basic tests for your code.
+## Some Instruction/ Information
+
+- In the destination field, the user can enter either a name for a place, or a zip code.
+- In the date field, the user can enter any date. If the date lies in the past, there will be a warning that no weather forecast is available. If the date is beyond 16 days in the future, the forecast will default to 16 days ahead. 
+- Once the user submits, the app will display an image of the destination. In case pixabay does not return any picture, the user will be notified about that.
+- The app layout adjusts for screens less wide than 700 pixel.
+- As an add on the RESTApi has been implemented to show information about the destination country.  
