@@ -74,16 +74,3 @@ The app returns:
 
 
 
-
-
-You must have an API key for each of the 3 APIs above.
-
-After you get your API keys, make a file called *.env* in the project root folder. File should contain:
-
-```
-GEONAMES_KEY = {your key here}
-WEATHERBIT_KEY = {your key here}
-PIXABAY_KEY = {your key here}
-```
-There is an included file called *.env-sample*. You may add your keys to this template file, then change its name to *.env*
-

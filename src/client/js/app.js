@@ -17,6 +17,7 @@ document.getElementById('submit').addEventListener('click', submit);
 
 
 
+
 // set up variables for the api url and the api key
 
 const geo = 'http://api.geonames.org/postalCodeSearchJSON?';
