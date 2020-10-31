@@ -6,7 +6,7 @@ const userName = ''
 const weaKEY = ''
 
 // API Key for pixarbay
-const pixKEY ''
+const pixKEY = ''
 
 
 // Create a new date instance dynamically with JS
@@ -25,7 +25,6 @@ const placeName = '&placename='
 const geoUsername = '&maxRows=10&username='
 let geoURL = ''
 
-// '<YOUR_API_KEY>&units=imperial';
 
 
 

@@ -35,11 +35,6 @@ and (min-width: 700px) {
     #app{
         display: grid;
         grid-auto-rows: minmax(100px, auto);
-        /* grid-template-columns:  */
-        /* height:100vh; */
-        
-        // background-image: ;
-        // background-image: url("sineu.jpeg");
         background-color: $dark-green;
         color: $milky-silky;
         justify-content: center;
@@ -93,10 +88,6 @@ and (max-width: 699px) {
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
-        /* height:100vh; */
-        
-        // background-image: ;
-        // background-image: url("sineu.jpeg");
         background-color: $dark-green;
         color: $milky-silky;
         justify-content: center;
@@ -180,17 +171,7 @@ and (max-width: 699px) {
 
 .outputSmall {
     margin: 0.2cm;
-
 }
-
-
-// #hereIcome {
-//     font-size: larger;
-//     font-family: $fontInHeader;
-    
-
-
-// }
 
 
 #hereIcome, #warningBox {
@@ -204,8 +185,6 @@ and (max-width: 699px) {
         opacity: 0;
     }
 }
-
-
 
 
 
